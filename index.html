@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Material Design Bootstrap</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Template styles -->
+    <style>
+        /* TEMPLATE STYLES */
+
+        html,
+        body,
+        .view {
+            height: 100%;
+        }
+        /* Navigation*/
+
+        .navbar {
+            background-color: transparent;
+        }
+
+        .scrolling-navbar {
+            -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            transition: background .5s ease-in-out, padding .5s ease-in-out;
+        }
+
+        .top-nav-collapse {
+            background-color: #1C2331;
+        }
+
+        footer.page-footer {
+            background-color: #1C2331;
+            margin-top: 2rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                background-color: #1C2331;
+            }
+        }
+        /*Call to action*/
+
+        .flex-center {
+            color: #fff;
+        }
+
+        .view {
+            background: url("http://static.gohuskies.com/mbb_tournament/images/space.jpg")no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        /*Contact section*/
+
+        #contact .fa {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1C2331;
+        }
+
+        .pop-up-header {
+          color: #33b5e5;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!--Navbar-->
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+
+        <!-- Collapse button-->
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="container">
+
+            <!--Collapse content-->
+            <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                <!--Navbar Brand-->
+                <a class="navbar-brand" href="http://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">MDB</a>
+                <!--Links-->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#references">References</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.Collapse content-->
+
+        </div>
+
+    </nav>
+    <!--/.Navbar-->
+
+    <!--Mask-->
+    <div class="view hm-black-strong">
+        <div class="full-bg-img flex-center">
+            <ul>
+                <li>
+                    <h1 class="h1-responsive wow fadeInDown" data-wow-delay="0.2s">Clayton Perszyk</h1></li>
+                <li>
+                    <p class="wow fadeInRight">Full Stack Web Developer</p>
+                </li>
+                <li>
+                    <a target="_blank" href="#contacts" class="btn btn-primary btn-lg wow fadeInLeft" data-wow-delay="0.2s">Contact Me!</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--/.Mask-->
+
+    <!-- Main container-->
+    <div class="container">
+
+         <div id="about"></div>
+
+         <div class="divider-new">
+             <h2 class="h2-responsive wow bounceIn">About me</h2>
+         </div>
+
+
+
+        <!--Section: About-->
+        <section  class="text-xs-center wow bounceIn" data-wow-delay="0.2s">
+
+          Full-stack software developer who loves learning new technologies and building products that people both use and enjoy.
+          I have always been interested in technology. In grade school I did a project on computer programming even though my family didn’t have a home computer. After college I started teaching myself web development, eventually enrolling in and graduating from Galvanize’s Full-Stack Web Development course.
+          <div id="projects"></div>
+        </section>
+        <!--Section: About-->
+
+
+        <div class="divider-new">
+            <h2 class="h2-responsive wow fadeInDown">Projects</h2>
+        </div>
+
+        <!--Section: projects -->
+        <section>
+
+            <div class="row">
+
+                <!--First columnn-->
+                <div class="col-lg-3">
+                    <!--Card-->
+                    <div class="card wow fadeInUp" data-toggle="modal" data-target="#Midi">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="img/midi-synth.jpeg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block text-xs-center">
+                            <!--Title-->
+                            <h4 class="card-title">Midi-Synth</h4>
+                            <hr>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!-- MIdi Modal -->
+                    <div class="modal fade" id="Midi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                          <!--Content-->
+                          <div class="modal-content">
+                              <!--Header-->
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
+                                  <h4 class="modal-title w-100" id="myModalLabel">MIDi-Synth</h4>
+                              </div>
+                              <!--Body-->
+                              <div class="modal-body">
+                                <div class="container-fluid">
+                                  <div class="row">
+
+                                    <div class="col-md-8">
+                                      <h4 class="pop-up-header">Description:</h4>
+                                      Browser-based MIDI synthesizer that leverages the Web Midi API to allow users to plug in a 37-key USB MIDI keyboard; users without access to a MIDI piano can use their mouse via the virtual piano keyboard.</div>
+                                    <hr>
+                                    <div class="col-md-4 ">
+                                      <h4 class="pop-up-header">Technologies:</h4>
+                                      <ul>
+                                        <li> - HTML5 Canvas</li>
+                                        <li> - CSS3</li>
+                                        <li> - Web Audio API</li>
+                                        <li> - Web Midi API</li>
+                                        <li> - React.js</li>
+                                        <li> - Deployed to Surge</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--Footer-->
+                              <div class="modal-footer">
+                                  <a target="_blank" href="http://midi-synth.surge.sh">Live Version</a> |
+                                  <a target="_blank" href="https://github.com/clayton-perszyk/web-synth">Github</a>
+                              </div>
+                          </div>
+                          <!--/.Content-->
+                      </div>
+                    </div>
+                    <!-- /.Live preview-->
+
+                    <!--/.Card-->
+                </div>
+                <!--First columnn-->
+
+                <!--Second columnn-->
+                <div class="col-lg-3">
+                    <!--Card-->
+                    <div class="card wow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#OIS">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="img/OIS.jpeg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block text-xs-center">
+                            <!--Title-->
+                            <h4 class="card-title">Objects In Space</h4>
+                            <hr>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="OIS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <!--Content-->
+                      <div class="modal-content">
+                          <!--Header-->
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                              <h4 class="modal-title w-100" id="myModalLabel">Objects In Space (Team Project)</h4>
+                          </div>
+                          <!--Body-->
+                          <div class="modal-body">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <h4 class="pop-up-header">Description:</h4>
+                                    Team project that tracks Near Earth Objects. A user is sent a push notification of the object daily with a list of NEOSs; they can then click the notification to see the list and then click each NEO to see its stats (including relative size, velocity, and whether it is a potential threat or not).</div>
+                                  <hr>
+                                  <div class="col-md-5">
+                                  <h4 class="pop-up-header">Technologies:</h4>
+                                  <ul>
+                                    <li> - Chrome Service Workers</li>
+                                    <li> - Angular.js</li>
+                                    <li> - Ruby On Rails</li>
+                                    <li> - Postgres</li>
+                                    <li> - Bootstrap</li>
+                                    <li> - Deployed to Heroku</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--Footer-->
+                          <div class="modal-footer">
+                              <a target="_blank" href="https://objects-in-space.herokuapp.com/#/ ">Live Version</a> |
+                              <a target="_blank" href="https://github.com/clayton-perszyk/objects-in-space">Github</a>
+                          </div>
+                      </div>
+                      <!--/.Content-->
+                  </div>
+                </div>
+                <!-- /.Live preview-->
+                <!--Second columnn-->
+
+                <!--Third columnn-->
+                <div class="col-lg-3">
+                    <!--Card-->
+                    <div class="card wow fadeInUp" data-wow-delay="0.4s">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="http://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(18).jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block text-xs-center">
+                            <!--Title-->
+                            <h4 class="card-title">Card title</h4>
+                            <hr>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--Third columnn-->
+
+                <!--First columnn-->
+                <div class="col-lg-3">
+                    <!--Card-->
+                    <div class="card wow fadeInUp" data-wow-delay="0.6s">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="http://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(20).jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block text-xs-center">
+                            <!--Title-->
+                            <h4 class="card-title">Card title</h4>
+                            <hr>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--First columnn-->
+            </div>
+
+        </section>
+        <!--/Section: Best features-->
+
+        <div id="contacts"></div>
+        <div class="divider-new">
+            <h2 class="h2-responsive wow fadeInUp">Contact</h2>
+        </div>
+
+        <!--Section: Contact-->
+        <section>
+            <div class="row">
+              <div class="col-md-1">
+                <img src="img/head-shot.jpeg" alt="clayton perszyk photo" class="rounded-circle">
+              </div>
+                <!--Second column-->
+                <div class="col-md-4">
+                    <ul class="text-xs-center">
+                        <li class="wow fadeInUp" data-wow-delay="0.3s"><i class="fa fa-phone"></i>
+                            <p>(206) - 619 - 6479</p>
+                        </li>
+
+                        <li class="wow fadeInUp" data-wow-delay="0.4s"><i class="fa fa-envelope"></i>
+                            <p>clayperszyk@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--/Second column-->
+                <div class="col-md-6">
+                  <form class="md-form" action="https://formspree.io/clayperszyk@gmail.com" method="POST">
+                    <div class="md-form">
+                      <input id="name" type="text" name="name" class="form-control">
+                      <label for="name">Name</label>
+                    </div>
+                    <div class="md-form">
+                      <input id="email" type="email" name="_replyto" class="form-control">
+                      <label for="email">Email</label>
+                    </div>
+                    <div class="md-form">
+                      <textarea type="text" id="message" class="md-textarea"></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                    <button type="submit" name="button" class="btn btn-primary">Send</button>
+                  </form>
+                </div>
+            </div>
+        </section>
+        <!--Section: Contact-->
+    </div>
+    <!--/ Main container-->
+
+
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--First column-->
+                <div class="col-md-3 offset-lg-1 hidden-lg-down">
+                    more stuff here....
+                </div>
+                <!--/.First column-->
+                <hr class="hidden-md-up">
+            </div>
+        </div>
+        <hr>
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2017 Copyright: <a href="#"> CLayton Perszyk </a>
+            </div>
+        </div>
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!-- Animations init-->
+    <script>
+        new WOW().init();
+    </script>
+
+    <script type="text/javascript">
+      $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+      })
+    </script>
+</body>
+
+</html>
