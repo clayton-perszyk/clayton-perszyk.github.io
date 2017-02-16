@@ -66,8 +66,13 @@
         }
 
         .photo {
-          margin: -50px 0 10px 0;
+          margin: -40px 0 10px 0;
           height: 100px;
+        }
+
+        div.card img.proj {
+          height: 12em;
+          width: 100%;
         }
     </style>
 </head>
@@ -145,7 +150,7 @@
                 <div class="col-lg-3">
                     <div class="card wow fadeInUp" data-toggle="modal" data-target="#Midi">
                         <div class="view overlay hm-white-slight">
-                            <img src="img/midi-synth.jpeg" class="img-fluid" alt="">
+                            <img src="img/midi-synth.jpeg" class="img-fluid proj" alt="">
                             <a>
                                 <div class="mask"></div>
                             </a>
@@ -196,7 +201,7 @@
                 <div class="col-lg-3">
                     <div class="card wow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#OIS">
                         <div class="view overlay hm-white-slight">
-                            <img src="img/OIS.jpeg" class="img-fluid" alt="">
+                            <img src="img/OIS.jpeg" class="img-fluid proj" alt="">
                             <a>
                                 <div class="mask"></div>
                             </a>
@@ -221,7 +226,7 @@
                               <div class="row">
                                 <div class="col-md-7">
                                   <h4 class="pop-up-header">Description:</h4>
-                                    Team project that tracks Near Earth Objects. A user is sent a push notification of the object daily with a list of NEOSs; they can then click the notification to see the list and then click each NEO to see its stats (including relative size, velocity, and whether it is a potential threat or not).</div>
+                                    Team project that tracks Near Earth Objects (NEOs). A user is sent a daily push notification with a list of NEOs; they can then click the notification to see the list and then click each NEO to see its stats (including relative size, velocity, and whether it is a potential threat or not).</div>
                                   <hr>
                                   <div class="col-md-5">
                                   <h4 class="pop-up-header">Technologies:</h4>
@@ -330,7 +335,7 @@
                       <label for="email">Email</label>
                     </div>
                     <div class="md-form wow fadeInUp">
-                      <textarea type="text" id="message" class="md-textarea"></textarea>
+                      <textarea type="text" name="message" id="message" class="md-textarea"></textarea>
                       <label for="message">Message</label>
                     </div>
                     <button type="submit" name="button" class="btn btn-primary wow fadeInUp">Send</button>
@@ -351,9 +356,6 @@
                     </a>
                     <a target="_blank" href="https://github.com/clayton-perszyk" class="btn btn-social-icon btn-github">
                       <span class="wow fadeInRight fa fa-github"></span>
-                    </a>
-                    <a target="_blank" href="https://www.facebook.com/clayton.perszyk" class="btn btn-social-icon btn-facebook">
-                      <span class="wow fadeInRight fa fa-facebook"></span>
                     </a>
                 </div>
                 <hr class="hidden-md-up">
