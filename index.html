@@ -78,7 +78,7 @@
 
 </head>
 
-<body>
+<body id="home">
     <nav class="navbar navbar-dark lspecial-color navbar-fixed-top scrolling-navbar">
 
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
@@ -87,24 +87,26 @@
 
         <div class="container">
             <div class="collapse navbar-toggleable-xs" id="collapseEx">
-                <a class="navbar-brand" href="#" target="_blank">CP</a>
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#references">References</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacts">Contact</a>
-                    </li>
-                </ul>
+                <a class="navbar-brand" href="#home">CP</a>
+                <div id="menu">
+                  <ul class="nav navbar-nav">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#about">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#projects">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#references">References</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#contacts">Contact</a>
+                      </li>
+                  </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -124,10 +126,8 @@
         </div>
     </div>
 
+    <div id="about"></div>
     <div class="container">
-
-         <div id="about"></div>
-
          <div class="divider-new">
              <h2 class="h2-responsive wow bounceIn">About me</h2>
          </div>
@@ -385,6 +385,49 @@
       $('#myModal').on('shown.bs.modal', function () {
         $('#myInput').focus()
       })
+    </script>
+    <script>
+    	$(document).ready(function () {
+    		$(document).on("scroll", onScroll);
+
+    		$('a[href^="#"]').on('click', function (e) {
+    			e.preventDefault();
+    			$(document).off("scroll");
+
+    			$('ul li.nav-item').each(function () {
+            console.log("HERE")
+    				$(this).removeClass('active');
+    			})
+          
+          $(this).parent().addClass("active")
+
+    			var target = this.hash;
+    			$target = $(target);
+          $(this).addClass('active');
+    			$('html, body').stop().animate({
+    				'scrollTop': $target.offset().top+2
+    			}, 500, 'swing', function () {
+    				window.location.hash = target;
+    				$(document).on("scroll", onScroll);
+    			});
+          $(this).addClass('active');
+    		});
+    	});
+
+    	function onScroll(event){
+    		var scrollPosition = $(document).scrollTop();
+    		$('nav a').each(function () {
+    			var currentLink = $(this);
+    			var refElement = $(currentLink.attr("href"));
+    			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+    				$('nav ul li a').removeClass("active");
+    				currentLink.addClass("active");
+    			}
+    			else{
+    				currentLink.removeClass("active");
+    			}
+    		});
+    	}
     </script>
 </body>
 
