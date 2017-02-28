@@ -11,70 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/mdb.min.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
-    <style>
-        html,
-        body,
-        .view {
-            height: 100%;
-        }
-
-        .navbar {
-            background-color: transparent;
-        }
-
-        .scrolling-navbar {
-            -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-            -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
-            transition: background .5s ease-in-out, padding .5s ease-in-out;
-        }
-
-        .top-nav-collapse {
-            background-color: #1C2331;
-        }
-
-        footer.page-footer {
-            background-color: #1C2331;
-            margin-top: 2rem;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .navbar {
-                background-color: #1C2331;
-            }
-        }
-
-        .flex-center {
-            color: #fff;
-        }
-
-        .view {
-            background: url("img/Cosmos09-min.jpg")no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-
-        #contact .fa {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #1C2331;
-        }
-
-        .pop-up-header {
-          color: #33b5e5;
-        }
-
-        .photo {
-          margin: -40px 0 10px 0;
-          height: 100px;
-        }
-
-        div.card img.proj {
-          height: 12em;
-          width: 100%;
-        }
-    </style>
+    <link href="css/style.css" rel="stylesheet"></link>
 </head>
 
 <body id="home">
@@ -150,7 +87,7 @@
                 <div class="col-lg-3">
                     <div class="card wow fadeInUp" data-toggle="modal" data-target="#Midi">
                         <div class="view overlay hm-white-slight">
-                            <img src="img/midi-synth.jpeg" class="img-fluid proj" alt="">
+                            <img src="img/midi-synth.jpeg" class="img-fluid proj" alt="midi-synth">
                             <a>
                                 <div class="mask"></div>
                             </a>
@@ -206,7 +143,7 @@
                                 <div class="mask"></div>
                             </a>
                         </div>
-                        <div class="card-block text-xs-center">
+                        <div class="card-block text-xs-center ois">
                             <h4 class="card-title">Objects In Space</h4>
                             <hr>
                         </div>
@@ -250,32 +187,88 @@
                   </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="card wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="card wow fadeInUp" data-wow-delay="0.4s" data-toggle="modal" data-target="#youRecipe">
                         <div class="view overlay hm-white-slight">
-                            <img src="http://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(18).jpg" class="img-fluid" alt="">
+                            <img src="img/youRecipe.jpeg" class="img-fluid" alt="">
                             <a>
                                 <div class="mask"></div>
                             </a>
                         </div>
                         <div class="card-block text-xs-center">
-                            <h4 class="card-title">Card title</h4>
+                            <h4 class="card-title">youRecipe</h4>
                             <hr>
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="youRecipe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                              <h4 class="modal-title w-100" id="myModalLabel">youRecipe</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <h4 class="pop-up-header">Description:</h4>
+                                    Easy-to-use app for creating recipe "books" for different food categories. Allows users to add their own recipes or search the Food2Fork database for recipes to add to a specific book.</div>
+                                  <hr>
+                                  <div class="col-md-5">
+                                  <h4 class="pop-up-header">Technologies:</h4>
+                                  <ul>
+                                    <li> - Express.js</li>
+                                    <li> - Node.js</li>
+                                    <li> - MongoDB</li>
+                                    <li> - Materialize</li>
+                                    <li> - Deployed to Heroku</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                              <a target="_blank" href="https://github.com/clayton-perszyk/-express-recipe-app">Github</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
                 <div class="col-lg-3">
-                    <div class="card wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="card wow fadeInUp" data-wow-delay="0.6s" data-toggle="modal" data-target="#somethingNew">
                         <div class="view overlay hm-white-slight">
-                            <img src="http://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(20).jpg" class="img-fluid" alt="">
+                            <img src="img/coming_soon.jpeg" class="img-fluid" alt="">
                             <a>
                                 <div class="mask"></div>
                             </a>
                         </div>
                         <div class="card-block text-xs-center">
-                            <h4 class="card-title">Card title</h4>
+                            <h4 class="card-title center">Something New</h4>
                             <hr>
                         </div>
                     </div>
+                </div>
+                <div class="modal fade" id="somethingNew" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <h1 class="pop-up-header">Something New Coming Soon!</h1>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                          </div>
+                      </div>
+                  </div>
                 </div>
             </div>
         </section>
@@ -315,12 +308,18 @@
             <div class="row">
                 <div class="col-md-6">
                     <ul class="text-xs-center">
-                        <li class="wow fadeInUp" data-wow-delay="0.3s"><i class="fa fa-phone"></i>
+                        <li class="wow fadeInUp" data-wow-delay="0.3s">
+                            <i class="fa fa-phone"></i>
                             <p>(206) - 619 - 6479</p>
                         </li>
 
-                        <li class="wow fadeInUp" data-wow-delay="0.4s"><i class="fa fa-envelope"></i>
+                        <li class="wow fadeInUp" data-wow-delay="0.4s">
+                            <i class="fa fa-envelope"></i>
                             <p>clayperszyk@gmail.com</p>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="0.4s">
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                            <p><a target="_blank" href="https://resume.creddle.io/resume/38ipqgyqr99">My Resume</a></p>
                         </li>
                     </ul>
                 </div>
