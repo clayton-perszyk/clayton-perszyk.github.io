@@ -131,7 +131,7 @@
                                 </div>
                               </div>
                               <div class="modal-footer">
-                                  <a target="_blank" href="http://midi-synth.surge.sh">Live Version</a> |
+                                  <a target="_blank" href="http://midi-synth.surge.sh" onclick="isMobileDevice(event)">Live Version</a> |
                                   <a target="_blank" href="https://github.com/clayton-perszyk/web-synth">Github</a>
                               </div>
                           </div>
@@ -183,7 +183,7 @@
                             </div>
                           </div>
                           <div class="modal-footer">
-                              <a target="_blank" href="https://objects-in-space.herokuapp.com/#/ ">Live Version</a> |
+                              <a target="_blank" href="https://objects-in-space.herokuapp.com/#/" onclick="isMobileDevice(e)">Live Version</a> |
                               <a target="_blank" href="https://github.com/clayton-perszyk/objects-in-space">Github</a>
                           </div>
                       </div>
@@ -384,6 +384,17 @@
       $('#myModal').on('shown.bs.modal', function () {
         $('#myInput').focus()
       })
+    </script>
+    <script type="text/javascript">
+      function isMobileDevice(e) {
+        var isMobile = (typeof window.orientation !== 'undefined' || (navigator.userAgent.indexOf('IEMobile') !== -1));
+
+        if (isMobile) {
+          e.preventDefault();
+
+          alert("Please use Desktop/Laptop to view.");
+        }
+      }
     </script>
     <script>
     	$(document).ready(function () {
